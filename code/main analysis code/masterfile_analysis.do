@@ -1,6 +1,6 @@
-global data "/home/airbnb/data_revision/data"
-global code "/home/airbnb/data_revision/code"
-global results "/home/airbnb/data_revision/results"
+global data "C:/Users/Имя/OneDrive/Рабочий стол/my github project/data"
+global code "C:/Users/Имя/OneDrive/Рабочий стол/my github project/code"
+global results "C:/Users/Имя/OneDrive/Рабочий стол/my github project/results"
 
 clear all
 
