@@ -40,7 +40,7 @@ capture mkdir "$results/"
 
 
  *Descriptive Statistics*
-do $code/1_statdes.do
+do $code/summary_stat_sec1
 
 /*
 Section 1
@@ -63,7 +63,7 @@ Prices with the number of reviews, by unobservable quality
 
 */
 
-do $code/2_reg.do
+do $code/preliminary_regression_sec2
 
 /*
 Section 1
@@ -82,7 +82,7 @@ xtset newid wave
 global sample "full"
 capture mkdir "$results//$sample/"
 global results_sample "$results//$sample/"
-do $code/3_structural.do
+do $code/main_regression_sec3
 
 
 /*
@@ -92,7 +92,7 @@ Table 4 - Non-linear model of log-prices as a function of the number of reviews
 
 
   *ADDITIONAL RESULTS / ROBUSTNESS*
-do $code/4_addresults.do
+do $code/additional_stat_analysis_sec4
 
 
 /*
@@ -105,7 +105,7 @@ Table 9 - Differential Upgrading
 Table 10 - Ethnic differentials in the accumulation of reviews over time
 */
 
-do $code/5_appendix.do
+do $code/appendix_sec5
 
 /*
 Appendix
