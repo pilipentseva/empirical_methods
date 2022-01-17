@@ -18,6 +18,7 @@ Changes named in the code folder compared to the original source:
 
 **Important!** Unfortunately, due to high calculations time, I wasn't able to execute most of the codes even after 3 days of running. Apparently, some of the files can take up to 20 days to execute and I only found it later. The same problem relates to Make file. I submit this way with changes made without testing whether it will actually work since I wasn't able to find a solution, at least it will be something. 
 
+**Exhibits** - folder which was supposed to include results, but which is empty since I didn't get any
 
 
 References:
