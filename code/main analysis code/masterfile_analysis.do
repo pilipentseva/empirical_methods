@@ -9,19 +9,19 @@ set matsize 11000
 set maxvar 32000
 
 
-    * *** Add required packages from SSC to this list ***
-    *local ssc_packages "distinct" "parmest" "eststo"
+     *** Add required packages from SSC to this list ***
+    local ssc_packages "distinct" "parmest" "eststo"
 	
-    *if !missing("`ssc_packages'") {
-        *foreach pkg in "`ssc_packages'" {
-        * install using ssc, but avoid re-installing if already present
-            *capture which `pkg'
-            *if _rc == 111 {                 
-               *dis "Installing `pkg'"
-               *quietly ssc install `pkg', replace
-               *}
-       * }
-   * }
+    if !missing("`ssc_packages'") {
+        foreach pkg in "`ssc_packages'" {
+         *install using ssc, but avoid re-installing if already present
+            capture which `pkg'
+            if _rc == 111 {                 
+               dis "Installing `pkg'"
+               quietly ssc install `pkg', replace
+               }
+        }
+    }
 	
 	
  **MASTERFILE**
@@ -93,7 +93,7 @@ Table 4 - Non-linear model of log-prices as a function of the number of reviews
 
 
   *ADDITIONAL RESULTS / ROBUSTNESS*
-*do $code/additional_stat_analysis_sec4
+do $code/additional_stat_analysis_sec4
 
 
 /*
