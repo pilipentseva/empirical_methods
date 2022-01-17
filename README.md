@@ -12,6 +12,11 @@ Changes named in the code folder compared to the original source:
 2) Code file names are renamed: abbreviation deleted, names recreated to better depict the meaning of files.
 3) Code separated into smaller do files
 4) Directories in the code changed to match the one on my laptop, changed "/" in all directories for right formating.
+5) Master do file reorganized with changes
+
+**Makefile**: Makefile which integrates together data and 5 most important do files of main analysis. Supplementary code files are part of these 5 main files, so I don't include them in Make separately.
+
+**Important!** Unfortunately, due to high calculations time, I wasn't able to execute most of the codes even after 3 days of running. Apparently, some of the files can take up to 20 days to execute and I only found it later. The same problem relates to Make file. I submit this way with changes made without testing whether it will actually work since I wasn't able to find a solution, at least it will be something. 
 
 
 
