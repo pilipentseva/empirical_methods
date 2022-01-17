@@ -10,6 +10,8 @@ Changes named in the code folder compared to the original source:
 
 1) Code folder separarated in several subfolders for more meaningful organisations
 2) Code file names are renamed: abbreviation deleted, names recreated to better depict the meaning of files.
+3) Code separated into smaller do files
+4) Directories in the code changed to match the one on my laptop, changed "/" in all directories for right formating.
 
 
 
